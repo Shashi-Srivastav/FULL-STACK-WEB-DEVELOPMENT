@@ -1,0 +1,23 @@
+*{
+    font-family: 'Courier New';
+}
+h1,h3{
+    color: #b92b27;
+}
+.upvote{
+    background-color: lightgreen;
+}
+#login{
+    background-color: lightcoral;
+}
+#signup{
+    background-color: lightseagreen;
+}
+
+.post a{
+ background-color: #5bacba;
+ text-decoration: none;
+}
+nav ul li a {
+    color: red;
+}
