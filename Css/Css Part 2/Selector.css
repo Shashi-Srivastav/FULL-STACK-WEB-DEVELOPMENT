@@ -21,3 +21,24 @@ h1,h3{
 nav ul li a {
     color: red;
 }
+div > input{
+    background-color: purple;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+button:active{
+    background-color: darkturquoise;
+    color: black;
+}
+input[type="text"]{
+    background-color: orange;
+}
+input[type="password"]{
+    background-color: red;
+}
+input[type="radio"]:checked + label {
+   color: red;
+   font-weight: bold;
+}
