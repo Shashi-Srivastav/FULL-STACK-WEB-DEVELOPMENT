@@ -13,3 +13,21 @@ div{
     top: 100px;
     left: 100px;
 }
+#relative{
+    background-color: burlywood;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#absolute{
+    background-color: gray;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#fixed{
+    background-color: lightseagreen;
+    position: fixed;
+    top: 50px;
+    left: 50px
+}
