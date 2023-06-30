@@ -3,14 +3,52 @@
     height: 300px;
     background-color: yellow;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
+    /* grid-template-rows: 100px 100px 100px; */
+
+    /* Grid Template  */
     /* grid-template-columns: 150px 150px; */
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
+
+    /* grid-template-rows: repeat(5, 1fr); Sameway */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: repeat(4,2fr);
+
+    /* Grid template repeat */
+    grid-template-columns: repeat(4,2fr);
+
+    /* Grid Gap */
+    row-gap: 50px;
+    column-gap:50px;
+    grid-gap: 10px 10px;
+
+    /* Grid Property  */
+    /* justify-items: start;
+    justify-items: end;
+    justify-items: center; */
+    place-items:center;
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
 }
 .item{
-    /* width: 100px;
-    height: 50px; */
+    width: 100px;
+    height: 50px;
     background-color: aqua;
     border: 2px solid red;
     text-align: center;
+}
+#one{
+    /* grid coloum */
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/4; Same  and span - kitne column*/
+    /* grid-column: 1/span 2; */
+}
+#two{
+    /* grid row  */
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/ span 2; */
+
 }
