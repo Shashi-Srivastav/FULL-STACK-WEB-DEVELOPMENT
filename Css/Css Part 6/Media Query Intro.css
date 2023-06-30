@@ -1,0 +1,44 @@
+h1 {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}
+
+@media (width: 500px) {
+    h1 {
+        background-color: yellow;
+        color: black;
+        border: 2px solid black;
+    }
+}
+
+@media (min-width:10px) {
+    h1 {
+        background-color: purple;
+        color: white;
+        border: 2px solid black;
+    }
+}
+
+@media (max-width:499px) {
+    h1 {
+        background-color: aqua;
+        color: black;
+        border: 2px solid black;
+
+    }
+}
+
+@media (min-width:10px) and (max-width:1000px) {
+    h1 {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+    }
+}
+
+@media (orientation:landscape) {
+    h1 {
+        background-color: black;
+    }
+}
