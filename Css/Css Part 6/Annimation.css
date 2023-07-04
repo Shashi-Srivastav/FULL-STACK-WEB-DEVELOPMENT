@@ -1,0 +1,36 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: aqua;
+
+    animation-name:widthAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+@keyframes fontAnimation {
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+@keyframes colorAnimation{
+    0%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: purple;
+    }
+}
+@keyframes widthAnimation{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 300px;
+    }
+}
