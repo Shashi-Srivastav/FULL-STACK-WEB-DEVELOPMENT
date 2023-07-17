@@ -25,4 +25,8 @@ console.log(name2.slice(7));
 console.log(name2.length);
 console.log(name2.slice(-11));
 
-//
+//Replace & Repeat
+let message = "ilovecoding ";
+console.log(message.replace("i","we"));
+console.log(message.replace("o","e"));//first occurance
+console.log(message.repeat(3));
