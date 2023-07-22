@@ -118,6 +118,6 @@ Math.ceil(5.5);
 //Random lie bt 0 & 1 but 1 excluded
 Math.random();
 //0.232323424;
-
+let random = Math.floor(Math.random() * 10)+1;// this will generate random no from 1 to 10
 
 
