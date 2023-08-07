@@ -45,3 +45,73 @@
 
 //Using Properties and Methods --------------------------------------------------------------------------
 
+// innerText----------
+//shows the visible text contained in a node
+// let para = document.querySelector('p');
+// console.dir(para);
+// para.innerText;
+
+// //innerHtml
+// //show full text
+// para.innerHTML;
+
+// //textContent
+// //show the full markup
+// para.textContent;
+
+//Manipulating Attributes --------------------------------------------------------------------------------
+// let img = document.querySelector('img');
+// img.getAttribute('id');
+// img.setAttribute('id','spidermainImg');
+// img.setAttribute('src','../assets/creation_3.jpeg');
+// img.getAttribute('class');
+// //null
+// img.setAttribute('class','customclass');
+
+//Manupulating Styles ----------------------------------------------------------------------------------
+// let heading = document.querySelector('h1');
+// heading.style;
+// heading.style.color = 'red';
+// heading.style.backgroundColor = 'blue';
+
+//Using Class List --------------------------------------
+// let img = document.querySelector('img');
+// img.classList;
+// img.classList.contains("customclass");
+// //false
+// let heading = document.querySelector('h1');
+// heading.classList.add("customclass");
+// heading.classList;
+// //names of diff diff classes
+// heading.classList.remove("customclass");
+
+//Navigation Page -----------------------------------------------------------------------------------------
+// let h4 = document.querySelector('h4');
+// h4.parentElement;
+// h4.children;
+// //empty
+// let box = document.querySelector('.box');
+// box.children;
+// box.childElementCount;
+// let ul = document.querySelector('ul');
+// ul.children;
+// ul.children[0];
+// ul.children[1];
+// ul.children[2];
+// ul.children[1].previousElementSibling;
+// ul.children[1].nextElementSibling;
+
+//Adding Elements -----------------------------------------------------------------------------------------
+// appendChild
+// append
+
+document.createElement('p');
+let newVar = document.createElement('p');
+newVar.innerText = "hi i am new p";
+newVar.append("its now appended !");
+// //to insert element we use append fx it it will add element in end of html page
+let body = document.querySelector('body');
+body.appendChild(newVar);
+// let btn = document.createElement('button');
+// btn.innerText = "click me";
+// box.appendChild(btn);

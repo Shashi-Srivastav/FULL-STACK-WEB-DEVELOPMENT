@@ -2,6 +2,11 @@ body {
   font-family: Arial;
 }
 
+.customclass{
+  color: red;
+  background-color: black;
+}
+
 #mainImg {
   width: 35%;
 }
