@@ -104,14 +104,33 @@
 //Adding Elements -----------------------------------------------------------------------------------------
 // appendChild
 // append
+//prepend
+// insertAdejeseny
 
-document.createElement('p');
-let newVar = document.createElement('p');
-newVar.innerText = "hi i am new p";
-newVar.append("its now appended !");
-// //to insert element we use append fx it it will add element in end of html page
-let body = document.querySelector('body');
-body.appendChild(newVar);
+
+// document.createElement('p');
+// let newVar = document.createElement('p');
+// newVar.innerText = "hi i am new p";
+// // //to insert element we use append fx it it will add element in end of html page
+// let body = document.querySelector('body');
+// body.appendChild(newVar);
 // let btn = document.createElement('button');
 // btn.innerText = "click me";
-// box.appendChild(btn);
+// btn.appendChild(btn);
+// let box = document.querySelector('.box');
+// box.prepend("hi its prepended now !");
+
+// //Removing Element ---------------------------------------------------------------------------------------
+// body.removeChild(newVar);
+// body.remove();
+
+
+
+//PART 10 =====================================================================================================
+
+//DOM Events ------------------------------------------------------------------------------------------------
+// added om part 10 -------
+
+
+
+
