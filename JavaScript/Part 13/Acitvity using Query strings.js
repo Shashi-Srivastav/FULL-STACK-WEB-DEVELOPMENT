@@ -13,6 +13,7 @@ function show(colArr){
     list.innerText = "";
     for(col of colArr){
         // console.log(col.name);
+        
     
         let li = document.createElement("li");
         li.innerText = col.name;
