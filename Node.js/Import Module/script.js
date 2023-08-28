@@ -1,3 +1,4 @@
-import {sum,PI} from "./math.js";
-
-console.log(sum(1,2));
+// import {sum,PI} from "./math.js";
+import { generate} from "random-words";
+// console.log(sum(1,2));
+console.log(generate());
