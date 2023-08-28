@@ -13,5 +13,16 @@
 
 
 //Module.Export --------------------------------------------------------------------------
-const someValue = require("./math")
-console.log(someValue);
+// const someValue = require("./math")
+// console.log(someValue);
+
+// const math = require("./math");
+
+// console.log(math.sum(2,3));
+
+//Export in Directories -----------------------------------------------------------------------------
+
+const info = require("./Fruits")
+
+// console.log(info);//array
+console.log(info[0]);

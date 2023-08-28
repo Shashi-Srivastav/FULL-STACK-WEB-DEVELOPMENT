@@ -1,0 +1,8 @@
+//to creat package use 
+
+npm init
+
+
+//to install dependencies if we have only package.json
+
+npm install
