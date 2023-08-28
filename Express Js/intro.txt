@@ -1,0 +1,5 @@
+Library - a lib is a collection of pre-written code that can be used to perform specific task
+eg - axios
+
+Framework - a fw is a set of pre-written code that provides a structure for development software application
+eg - express
