@@ -10,5 +10,10 @@ app.listen(port, ()=>{
 });
 
 app.use((req, res) =>{
-    
+    // console.log("request recived");
+    // res.send("my first api responce ");
+    res.send({
+        name: "sahsi",
+        age: 23,
+    })
 })
