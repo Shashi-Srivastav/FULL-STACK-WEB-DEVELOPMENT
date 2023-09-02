@@ -12,8 +12,10 @@ app.listen(port, ()=>{
 app.use((req, res) =>{
     // console.log("request recived");
     // res.send("my first api responce ");
-    res.send({
-        name: "sahsi",
-        age: 23,
-    })
-})
+    // res.send({//sending object
+    //     name: "shashi",
+    //     age: 23,//js object changed to json using express
+    // })
+    let code = "<h1>Fruits</h1> <ul><li>apple</li><li>orange</li></ul>"
+    res.send(code);
+});
