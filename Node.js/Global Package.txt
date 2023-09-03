@@ -1,3 +1,5 @@
 npm install -g <package_name>
 
 npm link <package_name>
+
+npm init -y with default package nd no name
