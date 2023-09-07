@@ -16,8 +16,35 @@ app.set("view engine", "ejs");
 // });
 
 // Passing Data to EJS 
-app.get("/roleDice",(req, res)=>{
-    res.render("roleDice.ejs");
+// app.get("/roleDice",(req, res)=>{
+//     res.render("roleDice.ejs");
+// });
+
+//Instagram EJS -------------------------------
+// app.get("/ig/:username",(req,res)=>{
+//     let {username} = req.params;
+//     res.render("instagramEJS.ejs",{username});
+// });
+
+//Conditional Statement -------------------------
+// app.get("/roleDice",(req, res)=>{
+//     let diceVal = Math.floor(Math.random() * 6) +1//assumed this data is from database
+//     res.render("roleDice.ejs", {num : diceVal});
+// });
+
+//loops in ejs ----------------------------------
+// app.get("/ig/:username",(req,res)=>{
+//     let {username} = req.params;
+//     const followers = ["shashi","rahul","sonu","monu"];
+//     res.render("instagramEJS.ejs",{username,followers});
+// });
+
+//fetching database data and render it
+app.get("/ig/:username",(req,res)=>{
+    let{ username }= req.params;
+    const instaData = require("./data.json");
+    const data = instaData[username];
+    res.render("instagramEJS2.ejs",{data});//{data} send as object
 });
 
 app.listen(port, ()=>{
