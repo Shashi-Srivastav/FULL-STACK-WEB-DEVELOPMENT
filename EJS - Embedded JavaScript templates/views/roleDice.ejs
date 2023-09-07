@@ -6,6 +6,9 @@
     <title>Role Dice</title>
 </head>
 <body>
-    <h3>Dice gives : <%= Math.floor(Math.random() * 6) +1 %></h3>
+    <h3>Dice gives : <%= num %></h3>
+    <% if(num == 6) {%>
+        <h2>Nice ! Roll Dice Again</h2>
+        <% }%>
 </body>
 </html>
