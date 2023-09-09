@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/Shashi-Srivastav/FULL-STACK-WEB-DEVELOPMENT">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Miscellaneous/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">ReadME Generator</h3>
