@@ -4,7 +4,7 @@
     <img src="Miscellaneous/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">ReadME Generator</h3>
+  <h3 align="center">Discription</h3>
 
   <p align="center">
      Full Stack Web Development Code Repository
