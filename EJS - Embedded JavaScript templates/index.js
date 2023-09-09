@@ -44,8 +44,22 @@ app.get("/ig/:username",(req,res)=>{
     let{ username }= req.params;
     const instaData = require("./data.json");
     const data = instaData[username];
-    res.render("instagramEJS2.ejs",{data});//{data} send as object
+    
+    if(data){
+        res.render("instagramEJS2.ejs",{data});//{data} send as object
+    }
+    else{
+        res.render("error.ejs");
+    }
 });
+
+//serving static files -----------------------------------------------
+// app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname,"/public/css")));
+app.use(express.static(path.join(__dirname,"/public/js")));
+//serving two dir
+
+
 
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
