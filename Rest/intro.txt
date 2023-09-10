@@ -1,0 +1,18 @@
+Rest
+Represetation State Transfer
+Rest - is an architectural style that defines a set of constraints to be used for creating web services
+
+CRUD - operation from db 
+C - creat
+R - read
+U - update
+D - delete
+
+all api but diff -- diff
+
+GET - retrieves resources
+POST - submit new data to the serer
+PUT - update existing data
+PATCH - update existing data partialy
+DELETE - remove data
+
