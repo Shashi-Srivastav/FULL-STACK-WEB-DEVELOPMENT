@@ -10,9 +10,11 @@
     <h1>All Posts</h1>
     <!-- Templating of ejs-->
     <%for(post of posts){%>
-        <div>
-            <h3>@<%=post.username%></h3>
-            <h4><%= post.content%></h4>
+        <div class="post">
+            <h3 class="user">@<%=post.username%></h3>
+            <h4 class="content"><%= post.content%></h4>
+            <br>
+            <a href="http://localhost:8080/posts/<%=post.id%>">See in details</a>
         </div>
     <% }%>
     <br><br><br>

@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8080;
 const path = require("path");
+const { v4: uuidv4 } = require('uuid');
 
 app.use(express.urlencoded({extended: true}));
 
@@ -14,27 +15,27 @@ app.use(express.static(path.join(__dirname,"public")));
 
 const posts = [
     {
-        id: "1a",
+        id: uuidv4(),
         username : "xyz",
         content : "asd",
     },
     {
-        id:"2b",
+        id:uuidv4(),
         username : "fhfh",
         content : "asdfhgtfbc",
     },
     {
-        id:"3c",
+        id:uuidv4(),
         username : "fsvcxvrtb",
         content : "tdht",
     },
     {
-        id:"4d",
+        id:uuidv4(),
         username : "fgtrbtrbr",
         content : "jgjty",
     },
     {
-        id:"5e",
+        id:uuidv4(),
         username : "xczczc",
         content : "asdasd",
     },
@@ -58,7 +59,9 @@ app.get("/posts/new",(req,res)=>{
 app.post("/posts",(req,res)=>{
     //destructuring
     let {username,content }= req.body;
-    posts.push({username,content});
+    //after uuid
+    let id = uuidv4();
+    posts.push({id,username,content});
     
 //redirect - express feature to connect two diff pages
 //res.redirect(url);
@@ -74,8 +77,12 @@ app.get("/post/:id",(req,res)=>{
     res.render("show.ejs",{post});
 });
 
+//UUID ----------------------------
 
 app.set(express.static(path.join(__dirname,"public")));
 app.listen(port, ()=>{
     console.log(`Listining on port ${port}`);
 });
+
+
+//error
