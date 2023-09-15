@@ -14,22 +14,27 @@ app.use(express.static(path.join(__dirname,"public")));
 
 const posts = [
     {
+        id: "1a",
         username : "xyz",
         content : "asd",
     },
     {
+        id:"2b",
         username : "fhfh",
         content : "asdfhgtfbc",
     },
     {
+        id:"3c",
         username : "fsvcxvrtb",
         content : "tdht",
     },
     {
+        id:"4d",
         username : "fgtrbtrbr",
         content : "jgjty",
     },
     {
+        id:"5e",
         username : "xczczc",
         content : "asdasd",
     },
@@ -58,6 +63,15 @@ app.post("/posts",(req,res)=>{
 //redirect - express feature to connect two diff pages
 //res.redirect(url);
     res.redirect("/posts");
+});
+
+//show route -------------------------------------------------------------------
+//id added : unique id
+app.get("/post/:id",(req,res)=>{
+    let {id} = req.params;
+    let post = post.find((p) => id === p.id);
+    console.log(post);
+    res.render("show.ejs",{post});
 });
 
 
